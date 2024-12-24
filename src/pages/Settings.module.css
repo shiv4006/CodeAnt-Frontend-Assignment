@@ -1,0 +1,10 @@
+.settings {
+  margin-inline-start: 266px;
+}
+
+@media (max-width: 768px) {
+  .settings {
+    all: unset;
+    width: 100%;
+  }
+}

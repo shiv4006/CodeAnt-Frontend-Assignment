@@ -1,0 +1,10 @@
+.howtouse {
+  margin-inline-start: 266px;
+}
+
+@media (max-width: 768px) {
+  .howtouse {
+    all: unset;
+    width: 100%;
+  }
+}

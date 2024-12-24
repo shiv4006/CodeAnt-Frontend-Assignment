@@ -1,0 +1,143 @@
+.container {
+  margin: 24px;
+  border-radius: 20px;
+  width: 100%;
+  overflow-x: hidden;
+  margin-inline-start: 266px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.upper-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 24px;
+  border: 1px solid #eee;
+}
+
+.heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.sub-heading {
+  font-size: 1rem;
+  color: #666;
+}
+
+.search {
+  width: 366px;
+  border: 2px solid #eee;
+  display: flex;
+  gap: 10px;
+  padding: 8px 10px;
+  margin-block-start: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.search i {
+  font-size: 1rem;
+  color: #444;
+
+}
+
+.search input {
+  width: 90%;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: #333;
+}
+
+.right {
+  display: flex;
+  gap: 16px;
+}
+
+.right button {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.right .add-repo {
+  background-color: rgba(21, 112, 239);
+  color: #fff;
+  border: none;
+}
+
+
+@media (max-width: 992px) {
+  .upper-section {
+    width: 100%;
+  }
+  
+  .search {
+    width: 100%;
+  }
+
+  .right {
+    gap: 8px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    all: unset;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .upper-section {
+    flex-direction: column;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .sub-heading {
+    font-size: .75rem;
+  }
+
+  .search {
+    width: min(95%, 400px);
+    background-color: #fff;
+  }
+
+  .search i {
+    font-size: 1rem;
+  }
+
+  .search input {
+    width: 100%;
+    background-color: none;
+    font-size: 1rem;
+  }
+
+  .right {
+    flex-direction: row;
+    gap: 16px;
+    margin-block-start: 8px;
+  }
+
+  .right button {
+    font-size: .75rem;
+    padding: 8px 12px;
+  }
+}

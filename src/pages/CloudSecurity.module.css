@@ -1,0 +1,10 @@
+.cloudsecurity {
+  margin-inline-start: 266px;
+}
+
+@media (max-width: 768px) {
+  .cloudsecurity {
+    all: unset;
+    width: 100%;
+  }
+}

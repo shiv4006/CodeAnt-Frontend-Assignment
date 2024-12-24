@@ -1,0 +1,10 @@
+.supports {
+  margin-inline-start: 266px;
+}
+
+@media (max-width: 768px) {
+  .supports {
+    all: unset;
+    width: 100%;
+  }
+}

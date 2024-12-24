@@ -1,0 +1,152 @@
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+
+.left img {
+  width: 72.5%;
+}
+
+.right {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(90%, 600px);
+  padding-block: 32px 48px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.heading img {
+  width: 32px;
+}
+
+.heading p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.box h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-block: 32px 24px;
+}
+
+.buttons {
+  width: 95%;
+  border-radius: 7.5px;
+  overflow: hidden;
+
+}
+
+.buttons button {
+  width: 50%;
+  padding-block: 12px;
+  font-size: 1.25rem;
+  border: none;
+  background-color: rgba(0, 0, 0, .05);
+}
+
+.buttons button.active {
+  background-color: rgb(21, 112, 239);
+  color: #fff;
+  border-radius: 7.5px;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-block-start: 28px;
+}
+
+.list-item {
+  all: unset;
+  border: 2px solid #eee;
+  border-radius: 7.5px;
+  padding-block: 12px;
+  width: 60%;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.list-item img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.tc {
+  margin-block-start: 32px;
+}
+
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    width: min(95%, 480px);
+  }
+
+  .heading img {
+    width: 24px;
+  }
+
+  .heading p {
+    font-size: 1.25rem;
+  }
+
+  .box h3 {
+    font-size: 1.25rem;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    height: 100vh;
+    font-size: .75rem;
+  }
+
+  .buttons button {
+    font-size: 1rem;
+  }
+
+  .list-item {
+    gap: 8px;
+    width: 70%;
+  }
+}

@@ -1,0 +1,10 @@
+.codereview {
+  margin-inline-start: 266px;
+}
+
+@media (max-width: 768px) {
+  .codereview {
+    all: unset;
+    width: 100%;
+  }
+}

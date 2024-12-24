@@ -1,0 +1,136 @@
+.container {
+  width: 242px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+}
+
+.brand {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.brand img {
+  width: 24px;
+}
+
+.dropdown {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 1rem;
+  padding-inline: 5px;
+  margin-block: 16px;
+  border: 2px solid #ccc;
+  outline: none;
+  cursor: pointer;
+}
+
+.option-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.list-item {
+  all: unset;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  color: #111;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.list-item.active {
+  background-color: #1570ef;
+  color: #fff;
+}
+
+.lower ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lower-list-item {
+  all: unset;
+  color: #111;
+  cursor: pointer;
+}
+
+.lower-list-item i {
+  width: 16px;
+  margin-inline-end: 16px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+}
+
+/* 
+ * Mobile design
+ */
+
+.mobile-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 24px;
+  padding-block: 12px;
+  border: 1px solid #ddd;
+}
+
+.mobile-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mobile-brand img {
+  width: 32px;
+}
+
+.mobile-brand p {
+  font-size: 1.25rem;
+}
+
+.mobile-container button {
+  border: none;
+  outline: none;
+  background-color: none;
+}
+
+.mobile-container button i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: none;
+}
+
+.mobile-navbar {
+  position: absolute;
+  top: 62.5px;
+  left: 0;
+  width: 100%;
+  background-color: #ddd;
+  z-index: 100;
+  font-size: .75rem;
+  padding-inline: 12px;
+}
